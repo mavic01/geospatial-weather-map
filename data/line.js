@@ -1,0 +1,1 @@
+const lineJson = {"type":"FeatureCollection","features":[{"type":"Feature","properties":{},"geometry":{"coordinates":[[137.06008512783376,36.058940865466866],[139.57456492294364,37.20502636192549],[138.57962873382291,35.62789946756381]],"type":"LineString"}}]}
