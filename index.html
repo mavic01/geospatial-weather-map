@@ -495,17 +495,17 @@
       attribution: '© <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     });
 
-    // Dark theme (professional for weather dashboards)
-    var darkTheme = L.tileLayer("https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png", {
-      maxZoom: 20,
-      attribution: '© <a href="https://stadiamaps.com/">Stadia Maps</a>'
-    });
+    // // Dark theme (professional for weather dashboards)
+    // var darkTheme = L.tileLayer("https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png", {
+    //   maxZoom: 20,
+    //   attribution: '© <a href="https://stadiamaps.com/">Stadia Maps</a>'
+    // });
 
-    // Satellite view
-    var satellite = L.tileLayer("https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg", {
-      maxZoom: 20,
-      attribution: '© Stadia Maps, © CNES, Distribution Airbus DS'
-    });
+    // // Satellite view
+    // var satellite = L.tileLayer("https://tiles.stadiamaps.com/tiles/alidade_satellite/{z}/{x}/{y}{r}.jpg", {
+    //   maxZoom: 20,
+    //   attribution: '© Stadia Maps, © CNES, Distribution Airbus DS'
+    // });
 
     // Google layers (as fallbacks)
     var googleStreets = L.tileLayer("http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}", {
@@ -521,7 +521,7 @@
     });
 
     // Add default satellite layer
-    satellite.addTo(map);
+    googleSatellite.addTo(map);
 
     // ===== WEATHER LAYERS ===== //
     // MRMS Precipitation Layer 
@@ -644,8 +644,8 @@
 
     // ===== LAYER CONTROLS ===== //
     var baseMaps = {
-      "🗺️ Dark Theme": darkTheme,
-      "🛰️ Satellite": satellite,
+    //   "🗺️ Dark Theme": darkTheme,
+    //   "🛰️ Satellite": satellite,
       "🗺️ OpenStreetMap": openStreetMap,
       "📍 Google Streets": googleStreets,
       "🛰️ Google Satellite": googleSatellite
